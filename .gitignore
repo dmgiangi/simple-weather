@@ -1,0 +1,10 @@
+# ignored folder
+/shelf
+/target/*
+/.idea
+
+# ignored file
+/.idea/workspace.xml
+
+# don't ignore packaged jar
+!target/simple-weather-1.0.jar

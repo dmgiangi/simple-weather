@@ -1,0 +1,22 @@
+<current>
+    <city id="664902" name="Titeşti">
+        <coord lon="25" lat="45"/>
+        <country>RO</country>
+        <timezone>10800</timezone>
+        <sun rise="2022-05-18T02:48:07" set="2022-05-18T17:44:58"/>
+    </city>
+    <temperature value="11.91" min="11.91" max="11.91" unit="celsius"/>
+    <feels_like value="10.98" unit="celsius"/>
+    <humidity value="70" unit="%"/>
+    <pressure value="1023" unit="hPa"/>
+    <wind>
+        <speed value="2.35" unit="m/s" name="Light breeze"/>
+        <gusts value="2.23"/>
+        <direction value="217" code="SW" name="Southwest"/>
+    </wind>
+    <clouds value="64" name="broken clouds"/>
+    <visibility value="10000"/>
+    <precipitation mode="no"/>
+    <weather number="803" value="broken clouds" icon="04d"/>
+    <lastupdate value="2022-05-18T15:03:09"/>
+</current>

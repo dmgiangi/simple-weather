@@ -1,0 +1,9 @@
+*************
+Current Weather Condition for:
+${weather.city}, ${weather.country}
+
+Temperature: ${weather.temp}°
+Condition: ${weather.condition}
+Humidity: ${weather.humidity}%
+Wind Chill: ${weather.chill}
+*************
