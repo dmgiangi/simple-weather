@@ -3,7 +3,15 @@ package org.gianluigi.weather;
 import org.apache.log4j.PropertyConfigurator;
 import java.io.InputStream;
 
+/**
+ * This class is the entry-point of the software read the args then if the args are valid retrieve weather data and show it on
+ */
 public class Main {
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         PropertyConfigurator.configure(Main.class.getClassLoader().getResource("log4j.properties"));
         float latitude, longitude;
@@ -33,13 +41,22 @@ public class Main {
     }
 
     private final String latitude;
-    private final String longitude;
+    private final String longitude;\
 
+    /**
+     * Instantiates a new Main.
+     *
+     * @param latitude  the latitude
+     * @param longitude the longitude
+     */
     public Main(String latitude, String longitude) {
         this.latitude = latitude;
         this.longitude = longitude;
     }
 
+    /**
+     * Start.
+     */
     public void start(){
         InputStream dataIn = new OpenWeatherRetriever().retrieve(latitude, longitude);
 
