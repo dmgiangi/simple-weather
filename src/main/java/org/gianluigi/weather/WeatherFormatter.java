@@ -8,9 +8,18 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.io.StringWriter;
 
+/**
+ * The type Weather formatter.
+ */
 public class WeatherFormatter {
     private static final Logger logger = Logger.getLogger(WeatherFormatter.class);
 
+    /**
+     * Format a Weather object in a String
+     *
+     * @param weather the weather
+     * @return the string
+     */
     public String format(Weather weather){
         logger.info("Formatting Weather Data");
 
