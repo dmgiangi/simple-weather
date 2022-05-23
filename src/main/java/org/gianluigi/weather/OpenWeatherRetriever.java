@@ -9,9 +9,19 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.net.UnknownServiceException;
 
+/**
+ * retrive an xml file with the data of the current weather and pack it in an Input Stream
+ */
 public class OpenWeatherRetriever {
     private static final Logger logger = Logger.getLogger(OpenWeatherRetriever.class);
 
+    /**
+     * retrive an xml file with the data of the current weather and pack it in an Input Stream
+     *
+     * @param latitude  the latitude
+     * @param longitude the longitude
+     * @return the input stream of the xml response file
+     */
     public InputStream retrieve(String latitude, String longitude) {
         logger.info("Retrieving Weather Data");
         String url = "https://api.openweathermap.org/data/2.5/weather?" +
