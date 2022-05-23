@@ -10,7 +10,9 @@ public class Main {
     /**
      * The entry point of application.
      *
-     * @param args the input arguments
+     * @param args the main method accept only two argument:
+     *             first argument is a latitude (minimum -90.0 ~ maximun 90.0
+     *             second argument is a longitude (minimun -180.0 ~ maximun 180.0)
      */
     public static void main(String[] args) {
         PropertyConfigurator.configure(Main.class.getClassLoader().getResource("log4j.properties"));
@@ -39,9 +41,14 @@ public class Main {
 
         new Main(args[0], args[1]).start();
     }
-
+    /*
+     * latitude is the latitude of the place
+     */
     private final String latitude;
-    private final String longitude;\
+    /*
+     * longitude is the longitude of the place
+     */
+    private final String longitude;
 
     /**
      * Instantiates a new Main.
@@ -55,7 +62,7 @@ public class Main {
     }
 
     /**
-     * Start.
+     * Start call the object that retrieve, parse and format the weather data.
      */
     public void start(){
         InputStream dataIn = new OpenWeatherRetriever().retrieve(latitude, longitude);
