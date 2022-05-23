@@ -7,9 +7,18 @@ import org.dom4j.io.SAXReader;
 
 import java.io.InputStream;
 
+/**
+ * parse the openweather xml response to a weather object
+ */
 public class OpenWeatherParser {
     private static final Logger logger = Logger.getLogger(OpenWeatherParser.class);
 
+    /**
+     * convert the xml data in a weather ocject
+     *
+     * @param inputStream the input stream
+     * @return the weather
+     */
     public Weather parse(InputStream inputStream) {
         Weather weather = null;
         logger.info("Creating XML Reader");
