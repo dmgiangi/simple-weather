@@ -1,7 +1,4 @@
 # ignored folder
 /shelf
-/target/*
+/target
 /.idea
-
-# ignored file
-/.idea/workspace.xml
